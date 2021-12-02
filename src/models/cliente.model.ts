@@ -22,13 +22,13 @@ export class Cliente extends Entity {
     type: 'string',
     required: true,
   })
-  cc: string;
+  usuario: string;
 
   @property({
     type: 'string',
     required: true,
   })
-  celular: string;
+  telefono: string;
 
   @property({
     type: 'string',
@@ -36,6 +36,11 @@ export class Cliente extends Entity {
   })
   correo: string;
 
+  @property({
+    type: 'string',
+    required: false,
+  })
+  clave: string;
 
   @property({
     type: 'string',
